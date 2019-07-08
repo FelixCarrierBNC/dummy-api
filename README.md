@@ -1,7 +1,9 @@
 # Deploying the mock API
 
- 1. SSH on the server
- 2. Install docker on EC2 instance
+ 1. Spin up EC2 instance
+ 2. SSH to the instance
+ 3. Install docker on EC2 instance
+
  From: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html
  
  > **To install Docker on an Amazon EC2 instance**
@@ -33,7 +35,7 @@
 > Cannot connect to the Docker daemon. Is the docker daemon running on this host?
 
 
- 3. Install git, then git clone
+ 3. Install git and do git clone
 
     ~~~~
     sudo yum install git
