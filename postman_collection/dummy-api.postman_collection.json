@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "ee4f4075-b20f-4d13-9f4a-030f5aa92bad",
+		"name": "dummy-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/predictions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"inputs\": [\r\n    {\r\n      \"id\": \"C-001\",\r\n      \"city\": \"Montreal\",\r\n      \"age\": 54,\r\n      \"balance\": 32.45\r\n    }\r\n  ]\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://p1078-dummy-api.innovarelabs.net/predictions",
+					"protocol": "http",
+					"host": [
+						"p1078-dummy-api",
+						"innovarelabs",
+						"net"
+					],
+					"path": [
+						"predictions"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
